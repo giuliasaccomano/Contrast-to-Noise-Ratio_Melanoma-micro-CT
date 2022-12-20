@@ -4,7 +4,7 @@ clear all; close all; clc;
 
 %% Parameters:
 
-IN_PATH = 'C:\Users\giulia.saccomano\Documents\MATLAB\GNB23\';
+IN_PATH = '*\MATLAB\GNB23\';
 
 mkdir(IN_PATH);
 
@@ -37,7 +37,7 @@ for i=1:num_slices
         fprintf(slices_name(i), '\n');
         figure,
         imshow(im);
-%         title('Lab-based x-ray micro-CT');
+        title('Lab-based x-ray micro-CT');
         hold on;
         for j = 1:size(rois_1,1)
             xA = rois_1(j,1);
@@ -52,7 +52,7 @@ for i=1:num_slices
         fprintf(slices_name(i), '\n');
         figure,
         imshow(im);
-%         title('SR micro-CT');
+        title('SR micro-CT');
         hold on;
         for j = 1:size(rois_2,1)
             xA = rois_2(j,1);
